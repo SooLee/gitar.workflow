@@ -1,0 +1,8 @@
+input_fastq1:
+  class: File
+  path: /home/ec2-user/data/GM12878_SRR1658581_1pc_1_R1.fastq
+input_fastq2:
+  class: File
+  path: /home/ec2-user/data/GM12878_SRR1658581_1pc_1_R2.fastq
+output_dir: "out.GM12878_SRR1658581_1pc_1"
+output_prefix: "GM12878_SRR1658581_1pc_1"

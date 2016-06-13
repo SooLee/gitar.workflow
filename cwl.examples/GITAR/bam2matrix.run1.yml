@@ -1,0 +1,7 @@
+input_bam1:
+  class: File
+  path: /home/ec2-user/data/GM12878_SRR1658581_pair1.bam
+input_bam2:
+  class: File
+  path: /home/ec2-user/data/GM12878_SRR1658581_pair2.bam
+output_dir: "out.GM12878_SRR1658581"
