@@ -1,0 +1,20 @@
+{ "name": "hictool-fastq2bam",
+  "title": "hictool-fastq2bam",
+  "summary": "Alignment of HiC fastq files to the genome using the steps defined by GITAR(hictool)",
+  "dxapi": "0.0.1",
+  "runSpec": {
+    "file": "src/code.py",
+    "interpreter": "python2.7"
+  },
+  "inputSpec": [
+    {"name": "fastq1_gz", "class": "file", "patterns": [ "*.fastq.gz", "*.fastq" ] },
+    {"name": "fastq2_gz", "class": "file", "patterns": [ "*.fastq.gz", "*.fastq" ] },
+    {"name": "bowtie_index", "class": "file", "patterns": [ "*.bowtieIndex.tgz" ] }
+  ],
+  "outputSpec": [
+    {"name": "sorted_bam_pe", "class": "file", "patterns": [ "*_noDup.sort.bam" ] },
+    {"name": "split_bam1", "class": "file", "patterns": [ "*_pair1.bam" ] },
+    {"name": "split_bam2", "class": "file", "patterns": [ "*_pair2.bam" ] }
+  ]
+}
+

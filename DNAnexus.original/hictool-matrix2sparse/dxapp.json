@@ -1,0 +1,21 @@
+{ "name": "hictool-matrix2sparse",
+  "title": "hictool-matrix2sparse",
+  "summary": "collecting matrix files produced by GITAR(hictool) and convert it to a single sparse matrix file",
+  "dxapi": "0.0.1",
+  "runSpec": {
+    "file": "src/code.py",
+    "interpreter": "python2.7"
+  },
+  "inputSpec": [
+    {"name": "all_contact_matrices", "class": "file", "patterns": [ "HiCtool_contact_matrices.tar.gz" ]},
+    {"name": "matrix_list", "class": "file", "patterns": [ "HiCtool_matrix_list.txt" ]},
+    {"name": "contact_matrix_binsize", "class": "int", "default": 50000 }
+  ],
+  "outputSpec": [
+    {"name": "sparse_matrix_observed", "class": "file", "patterns": [ "HiCtool_sparse_matrix_observed.gz" ]},
+    {"name": "sparse_matrix_normalized_enrich", "class": "file", "patterns": [ "HiCtool_sparse_matrix_normalized_enrich.gz" ]},
+    {"name": "sparse_matrix_normalized_fend", "class": "file", "patterns": [ "HiCtool_sparse_matrix_normalized_fend.gz" ]}
+  ]
+}
+
+

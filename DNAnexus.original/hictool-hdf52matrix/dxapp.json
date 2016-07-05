@@ -1,0 +1,34 @@
+{ "name": "hictool-hdf52matrix",
+  "title": "hictool-hdf52matrix",
+  "summary": "Creating matrix files from hdf5 files using GITAR(hictool)",
+  "dxapi": "0.0.1",
+  "runSpec": {
+    "file": "src/code.py",
+    "interpreter": "python2.7",
+    "bundledDepends": [
+      {
+        "name": "miniconda_gitar11.tar.gz",
+        "id": {
+          "$dnanexus_link": "file-BxkZBxj0G5p4Jf6GKQF8QQ4z"
+        }
+      }
+    ]
+  },
+  "inputSpec": [
+    {"name": "HiC_norm_binning_hdf5", "class": "file", "patterns": [ "HiC_norm_binning.hdf5" ] },
+    {"name": "HiC_data_object_hdf5", "class": "file", "patterns": [ "HiC_data_object.hdf5" ] },
+    {"name": "fend_object_hdf5", "class": "file", "patterns": [ "fend_object.hdf5" ] },
+    {"name": "chromosome", "class": "string"},
+    {"name": "contact_matrix_binsize", "class": "int"},
+    {"name": "chrlen_file", "class": "file" }
+  ],
+  "outputSpec": [
+    {"name": "observed_contact_matrix", "class": "file", "patterns": [ "HiCtool_observed_contact_matrix*.txt" ] },
+    {"name": "normalized_fend_contact_matrix", "class": "file", "patterns": [ "HiCtool_normalized_fend_contact_matrix*.txt" ] },
+    {"name": "normalized_enrich_contact_matrix", "class": "file", "patterns": [ "HiCtool_normalized_enrich_contact_matrix*.txt" ] },
+    {"name": "expected_fend_contact_matrix", "class": "file", "patterns": [ "HiCtool_expected_fend_contact_matrix*.txt" ] },
+    {"name": "expected_enrich_contact_matrix", "class": "file", "patterns": [ "HiCtool_expected_enrich_contact_matrix*.txt" ] }
+  ]
+}
+
+

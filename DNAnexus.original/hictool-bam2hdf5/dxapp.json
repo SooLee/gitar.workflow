@@ -1,0 +1,31 @@
+{ "name": "hictool-bam2hdf5",
+  "title": "hictool-bam2hdf5",
+  "summary": "Creating hdf5 files from bam files using GITAR(hictool)",
+  "dxapi": "0.0.1",
+  "version": "0.0.1",
+  "runSpec": {
+    "file": "src/code.py",
+    "interpreter": "python2.7",
+    "bundledDepends": [
+      {
+        "name": "miniconda_gitar11.tar.gz",
+        "id": {
+          "$dnanexus_link": "file-BxkZBxj0G5p4Jf6GKQF8QQ4z"
+        }
+      }
+    ]
+  },
+  "inputSpec": [
+    {"name": "bam1", "class": "file", "patterns": [ "*.bam" ] },
+    {"name": "bam2", "class": "file", "patterns": [ "*.bam" ] },
+    {"name": "RE_site_bed", "class": "file", "patterns": [ "*.bed" ] }
+  ],
+  "outputSpec": [
+    {"name": "fend_object_hdf5", "class": "file", "patterns": [ "fend_object.hdf5" ] },
+    {"name": "HiC_data_object_hdf5", "class": "file", "patterns": [ "HiC_data_object.hdf5" ] },
+    {"name": "HiC_distance_function_hdf5", "class": "file", "patterns": [ "HiC_distance_function.hdf5" ] },
+    {"name": "HiC_norm_binning_hdf5", "class": "file", "patterns": [ "HiC_norm_binning.hdf5" ] },
+    {"name": "HiC_project_object_hdf5", "class": "file", "patterns": [ "HiC_project_object.hdf5" ] }
+  ]
+}
+
