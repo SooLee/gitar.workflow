@@ -50,7 +50,7 @@ for chr,fname in input_list.iteritems():
        if(val != 0):
            print ( chr+'\t'+str(bin1)+'\t'+chr+'\t'+str(bin2)+'\t'+str(val))
        bin2+=bin_size
-       if(bin2==largest_bin_start_pos):
+       if(bin2>largest_bin_start_pos):
            bin1+=bin_size
            bin2=0
     fh.close()
