@@ -1,4 +1,4 @@
-FROM duplexa/hictool-env
+FROM duplexa/hictool-env:v1
 MAINTAINER Soo Lee (duplexa@gmail.com)
 COPY HiCtool_norm_contact_matrix.hg19.arg.py /usr/bin/hictool/
 RUN chmod a+x /usr/bin/hictool/*

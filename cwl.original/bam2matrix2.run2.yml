@@ -1,0 +1,11 @@
+HiC_norm_binning_hdf5:
+  class: File
+  path: /home/ec2-user/data/out/HiC_norm_binning.hdf5
+HiC_data_object_hdf5:
+  class: File
+  path: /home/ec2-user/data/out/HiC_data_object.hdf5
+fend_object_hdf5:
+  class: File
+  path: /home/ec2-user/data/out/fend_object.hdf5
+chromosome: "22"
+contact_matrix_binsize: 50000

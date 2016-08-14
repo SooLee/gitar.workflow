@@ -2,7 +2,7 @@ cwlVersion: cwl:draft-3
 class: CommandLineTool
 hints:
   - class: DockerRequirement
-    dockerPull: duplexa/hictool-bam2matrix
+    dockerPull: duplexa/hictool-bam2matrix:v1
 baseCommand: HiCtool_hifive.hg19.arg.py
 inputs:
   - id: input_bam1

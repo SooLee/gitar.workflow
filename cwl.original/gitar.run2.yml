@@ -4,7 +4,7 @@ input_fastq1:
 input_fastq2:
   class: File
   path: /home/ec2-user/data/GM12878_SRR1658581_1pc_1_R2.fastq
-output_dir: "out.GM12878_SRR1658581_1pc_1"
+output_dir: "/home/ec2-user/data/out.GM12878_SRR1658581_1pc_1"
 output_prefix: "GM12878_SRR1658581_1pc_1"
 contact_matrix_binsize: 50000
 chromosome: ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","X"]

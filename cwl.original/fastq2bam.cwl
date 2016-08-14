@@ -3,7 +3,7 @@ class: CommandLineTool
 baseCommand: preprocessing.sh
 hints:
   - class: DockerRequirement
-    dockerPull: duplexa/hictool-fastq2bam
+    dockerPull: duplexa/hictool-fastq2bam:v1
 inputs:
   - id: input_fastq1
     type: File

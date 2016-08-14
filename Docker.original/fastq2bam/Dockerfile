@@ -1,4 +1,4 @@
-FROM duplexa/hictool-env
+FROM duplexa/hictool-env:v1
 MAINTAINER Soo Lee (duplexa@gmail.com)
 RUN mkdir /resources/
 WORKDIR /resources/

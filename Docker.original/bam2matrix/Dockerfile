@@ -1,4 +1,4 @@
-FROM duplexa/hictool-env
+FROM duplexa/hictool-env:v1
 MAINTAINER Soo Lee (duplexa@gmail.com)
 COPY HiCtool_hifive.hg19.arg.py /usr/bin/hictool/
 RUN mkdir /resources/

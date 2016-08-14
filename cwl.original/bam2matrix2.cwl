@@ -2,7 +2,7 @@ cwlVersion: cwl:draft-3
 class: CommandLineTool
 hints:
   - class: DockerRequirement
-    dockerPull: duplexa/hictool-bam2matrix2
+    dockerPull: duplexa/hictool-bam2matrix2:v1
 baseCommand: HiCtool_norm_contact_matrix.hg19.arg.py
 inputs:
   - id: HiC_norm_binning_hdf5
